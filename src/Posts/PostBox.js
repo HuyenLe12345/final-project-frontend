@@ -27,7 +27,7 @@ const PostBox = ({ post, deletePost }) => {
         variant="top"
         src={
           post.images[0]
-            ? `http://localhost:8080/${post.images[0]}`
+            ? `https://final-project-backend-production-c0dc.up.railway.app/${post.images[0]}`
             : postbackground
         }
         alt={post.title}
@@ -62,7 +62,7 @@ const PostBox = ({ post, deletePost }) => {
             >
               <div className="avatar">
                 <img
-                  src={`http://localhost:8080/${post.authorId?.avatar}`}
+                  src={`https://final-project-backend-production-c0dc.up.railway.app/${post.authorId?.avatar}`}
                   alt=""
                   style={{ borderRadius: "50%", height: "30px" }}
                 />
