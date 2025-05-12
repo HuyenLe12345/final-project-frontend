@@ -10,7 +10,7 @@ function Coop({ title, partners, description }) {
         {partners.map((partner, index) => (
           <img
             key={partner._id || index}
-            src={`http://localhost:8080/${partner.avatar}`}
+            src={`https://final-project-backend-production-c0dc.up.railway.app/${partner.avatar}`}
             alt={partner.organizationName}
             className="partner-logo mx-3 my-2"
             style={{ height: "50px" }}
