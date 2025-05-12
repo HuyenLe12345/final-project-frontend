@@ -1,0 +1,12 @@
+.stat-box {
+  border-radius: 10px;
+}
+.stat-box h3 {
+  font-size: 2rem;
+}
+.stats-section {
+  padding: 0 40px;
+
+  border-radius: 20px;
+  margin: 10px 20px;
+}

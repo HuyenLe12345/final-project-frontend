@@ -1,0 +1,32 @@
+.sticky {
+  position: fixed;
+  top: 100px;
+  width: 357px;
+  overflow: scroll;
+  max-width: 100%;
+  z-index: 100;
+}
+
+/* .sticky-container {
+  height: 100vh; /* Adjust height as needed */
+/* overflow-y: auto; */
+/* } */
+.organizationBox {
+  /* position: absolute; */
+  overflow: visible;
+  top: 330px;
+
+  max-width: 100%;
+  width: 375px;
+}
+
+@media (min-width: 992px) {
+  .goal-org {
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .organizationBox {
+    width: 100%;
+  }
+}

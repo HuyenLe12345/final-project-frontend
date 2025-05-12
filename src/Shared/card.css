@@ -1,0 +1,58 @@
+/* PROJECT */
+.project-page {
+  margin-top: 80px;
+  min-height: 600px;
+}
+.project-form {
+  margin-top: 100px;
+  border-radius: 5px;
+  text-align: left;
+}
+.project-form h5 {
+  text-align: center;
+  padding-top: 20px;
+  color: green;
+  text-decoration-style: double;
+}
+/* POST */
+.post-page-detail {
+  margin-top: 80px;
+}
+.post-page {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 80px;
+  min-height: 600px;
+}
+.layout-form {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.post-form {
+  width: 700px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+/* bảng từ thiện theo userID đối với client */
+.personal-donation-table {
+  padding-bottom: 10px;
+}
+/* support-chart */
+.support-chart,
+.donation-chart {
+  border: 2px solid green;
+  padding: 0 10px;
+}
+/* DONATION MANAGEMENT */
+.donation-management {
+  margin-top: 60px;
+}
+/* DASH BOARD */
+.dashboard-total-donation {
+  border: 2px solid green;
+  height: 100%;
+}
+.dashboard-total-donation table {
+  padding: 0;
+}

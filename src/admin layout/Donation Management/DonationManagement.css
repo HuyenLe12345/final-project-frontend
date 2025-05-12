@@ -1,0 +1,106 @@
+.donation-management {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgb(227, 239, 227);
+}
+.filter-container {
+  /* background-color: #f8f9fa;  */
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.filter-options {
+  display: flex;
+  /* Space between filter options */
+}
+
+.filter-control {
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  width: auto;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* For Safari */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  background-size: 16px;
+}
+.search-date::-webkit-calendar-picker-indicator {
+  width: auto;
+}
+.search-status {
+  max-width: 120px;
+  width: auto;
+}
+
+.search-project {
+  max-width: 90px;
+  width: auto;
+}
+
+.search-type {
+  max-width: 120px;
+}
+
+/*For IE*/
+select::-ms-expand {
+  display: none;
+}
+.search-bar {
+  display: flex;
+  width: 200px;
+  margin-right: 20px;
+}
+
+/* Existing CSS */
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-icon {
+  position: absolute;
+  left: 5%; /* Adjust as needed */
+  top: 42%;
+  transform: translateY(-50%);
+  color: #aaa; /* Adjust color as needed */
+  pointer-events: none; /* Make sure the icon doesn't block clicks */
+}
+
+.search-input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 8px 16px;
+  padding-left: 30px; /* Add padding to make space for the icon */
+  border: 1px solid #ced4da;
+
+  font-size: 14px;
+  width: 100%; /* The input should take up all the available space within its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  flex-grow: 1; /* Allow the input to grow and take up available space */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 576) {
+  .filter-container {
+    display: block;
+  }
+  .search-bar {
+    display: block;
+  }
+}

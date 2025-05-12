@@ -1,0 +1,25 @@
+.status-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.status-button .inactive-button,
+.status-button .active-button {
+  border: 2px solid green;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+.active-button:hover,
+.active-button:focus,
+.inactive-button:hover,
+.inactive-button:focus {
+  cursor: pointer;
+}
+.status-button .active {
+  background-color: green;
+  color: white;
+}

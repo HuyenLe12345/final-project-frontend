@@ -1,0 +1,51 @@
+.form-group {
+  margin-bottom: 10px;
+  /* width: auto; */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block; /* Ensure labels are on their own line */
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+.search-post input[type="text"] {
+  padding-left: 35px;
+}
+.line input,
+.line label {
+  display: inline-block;
+}
+
+.line label {
+  margin-right: 10px;
+}
+.form-control::placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+.file-input label {
+  margin-right: 10px;
+}
+.linkQR {
+  font-size: 15px;
+}
+/* Add these styles for rounded inputs and selects */
+.form-control {
+  padding: 8px 16px;
+  border: 1px solid #ced4da; /* Optional: Add a border */
+  width: 100%;
+}
+
+/* Style for checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 5px;
+}

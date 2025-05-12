@@ -1,0 +1,162 @@
+.project-column {
+  flex-basis: calc(33.33% - 20px);
+
+  margin: 10px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+.project-column img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project-category {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+
+  font-weight: 900;
+  margin-left: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.project-category > span {
+  padding: 3px 30px;
+  border-radius: 20px;
+  background-color: #317443;
+}
+.project-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #084c1a;
+  line-height: 1.2;
+  height: 50px;
+  overflow: hidden; /* Required for text-overflow: ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  text-align: left; /*  Or left, right, etc., but usually not justify */
+  word-break: break-word; /*  Allow long words to break */
+  margin: 0 20px;
+}
+.project-title a {
+  text-decoration: none;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.project-title a:hover {
+  color: #1c7734;
+  cursor: pointer;
+}
+.funding-goals {
+  margin-bottom: 10px;
+  background-color: #7fb424;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.goal {
+  width: 130px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.goal-project {
+  width: 100%;
+}
+.goal-progress {
+  font-size: 13px;
+  padding: 0;
+}
+.progress-bar {
+  background-color: white;
+  height: 8px;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.progress {
+  background-color: #f00; /* Or any color you like */
+  height: 8px;
+}
+
+.percentage {
+  font-size: 1em;
+  color: #666;
+  font-weight: bold;
+}
+
+.organization {
+  font-size: 0.8em;
+  margin: 10px 0;
+  width: 100%;
+}
+.organization img {
+  border-radius: 50%;
+}
+.org-avatar {
+  display: inline-block;
+  width: 60%;
+  /* height: 0px; */
+}
+.avatar,
+.orgName,
+.post-orgName {
+  display: inline-block;
+}
+.post-orgName {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+.avatar {
+  width: 30px;
+  height: 100%;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+.orgName {
+  font-weight: bold;
+  padding-left: 10px;
+  width: 132px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.deadline {
+  display: inline-block;
+  width: 40%;
+  font-size: 1em;
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+  .project-column {
+    width: 400px; /* Two columns on medium screens */
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-column {
+    width: 100%; /* One column on small screens */
+    margin: 5px auto;
+  }
+}

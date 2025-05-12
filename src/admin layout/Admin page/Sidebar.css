@@ -1,0 +1,83 @@
+/* admin page */
+
+.sidebar a {
+  color: white;
+}
+.sidebar .nav-item {
+  width: 100%;
+}
+.sidebar .nav-item a.active,
+.sidebar .nav-item a:hover,
+.sidebar .active {
+  background-color: rgb(227, 239, 227);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: rgb(12, 69, 12);
+  width: 100%;
+}
+.sidebar {
+  width: 240px; /* Chiều rộng mặc định */
+  height: 100vh; /* Chiều cao đầy đủ */
+  position: fixed; /* Hoặc absolute, tùy thuộc vào bố cục */
+  top: 80px;
+  left: 0;
+  transition: width 0.3s ease; /* Chuyển đổi mượt mà */
+  overflow: hidden; /* Ẩn nội dung khi thu gọn */
+  z-index: 1000; /* Đảm bảo nó ở trên các nội dung khác */
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.sidebar .nav-link span {
+  display: inline;
+}
+
+.sidebar .write-project {
+  color: white;
+}
+.sidebar-toggle-button {
+  display: none;
+}
+/* Media Queries */
+@media (min-width: 1026px) {
+  .sidebar {
+    width: 190px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 60px;
+    transition: width 0.3s ease; /* Thêm hiệu ứng mượt */
+  }
+
+  .sidebar.nav-link span {
+    display: none;
+  }
+  .sidebar.expanded {
+    width: 240px;
+  }
+  .sidebar.expanded.nav-link span {
+    display: inline;
+  }
+  .sidebar-toggle-button {
+    display: block; /* Hiển thị nút toggle */
+    position: absolute;
+    bottom: 30%;
+    left: 15px;
+    border: gray;
+    padding: 5px 20px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  .sidebar:not(.expanded) .nav-link span {
+    display: none;
+  }
+
+  .sidebar.expanded .nav-link span {
+    display: inline;
+  }
+}

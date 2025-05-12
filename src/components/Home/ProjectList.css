@@ -1,0 +1,60 @@
+/* ProjectList.css */
+.project-list {
+  overflow: hidden; /* Ẩn thanh cuộn dọc */
+  padding: 0 30px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.project-row {
+  display: flex;
+
+  padding-bottom: 15px; /* Thêm khoảng trống cho thanh cuộn */
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.project-column {
+  transition: transform 0.5s ease;
+}
+
+.project-row::-webkit-scrollbar {
+  height: 8px; /* Độ dày của thanh cuộn */
+}
+
+.project-row::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của rãnh */
+}
+.project-row::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thanh cuộn */
+  border-radius: 4px;
+}
+
+.project-row::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu thanh cuộn khi hover */
+}
+
+.container {
+  max-width: 100%; /* Để container chiếm hết chiều rộng có thể */
+  padding-left: 15px;
+  padding-right: 15px;
+}

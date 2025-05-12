@@ -1,0 +1,26 @@
+.pc-container {
+  margin-top: 80px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.pc-container .title-dashboard {
+  text-align: justify;
+  color: white;
+  width: 300px;
+
+  background-color: #0b7226;
+  border-top-right-radius: 50%;
+
+  border: rgb(225, 240, 157) 10px double;
+  background-clip: content-box;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+/* /StatisticCard */
+
+/* row ủng hộ */
+.donation-row {
+  width: 95%;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}

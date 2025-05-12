@@ -1,0 +1,107 @@
+.layout-form {
+  margin-top: 100px;
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(227, 239, 227);
+
+  text-align: left;
+}
+.layout-form h5 {
+  text-align: center;
+  padding-top: 20px;
+  color: green;
+  text-decoration-style: double;
+}
+.layout-form form {
+  padding: 20px;
+}
+.layout-form label {
+  margin-bottom: 10px;
+}
+.layout-form .form-control {
+  margin-bottom: 10px;
+  text-align: left;
+}
+/* style cho phần HÌNH THỨC QUYÊN GÓP*/
+.layout-form .donationType {
+  display: inline-block;
+  margin-right: 30px;
+}
+.layout-form .donationType input {
+  margin-right: 10px;
+}
+
+/* style cho nút button submit  */
+.layout-form .container-button {
+  text-align: center;
+  margin-top: 20px;
+}
+.column-1,
+.column-2 {
+  border: 1px solid green;
+}
+.column-1 {
+  border-right: none;
+}
+
+.goal label,
+.goal input {
+  display: inline-block;
+  margin-right: 10px;
+}
+.donationType label,
+.goal label {
+  font-weight: normal;
+}
+.goal {
+  width: 150px;
+  margin-right: 10px;
+}
+.goal label {
+  width: 62px;
+  margin-left: 5px;
+}
+
+.category {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+}
+/* style input[type="file"] */
+.layout-form .images input {
+  margin-left: 20px;
+}
+.note {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .column-1 {
+    border-right: 1px solid green;
+    border-bottom: 0;
+  }
+  .column-2 {
+    border-top: 0;
+  }
+  .column-2 .type {
+    margin-right: 30px;
+  }
+}
+/* style cho select province */
+.provinces {
+  width: 200px;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* style cho Form Group "gender" + "status" */
+.status,
+.gender {
+  display: inline-block;
+}
+/* /form-control */
+.form-control::placeholder {
+  color: rgb(210, 206, 206);
+}

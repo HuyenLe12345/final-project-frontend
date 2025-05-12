@@ -1,0 +1,63 @@
+.post-box {
+  position: relative;
+  margin: 10px;
+  flex-basis: calc(33.33% - 20px); /* 3 cột */
+}
+.post-box-title {
+  overflow: hidden; /* Required for text-overflow: ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  text-align: left; /*  Or left, right, etc., but usually not justify */
+  word-break: break-word; /*  Allow long words to break */
+}
+.post-box-content {
+  overflow: hidden; /* Required for text-overflow: ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  text-align: left; /*  Or left, right, etc., but usually not justify */
+  word-break: break-word; /*  Allow long words to break */
+  height: 95px;
+}
+.edit-button {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(22, 142, 22);
+  color: white;
+  font-weight: 500;
+}
+.read-button {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(22, 142, 22);
+  color: white;
+  font-weight: 500;
+}
+.read-button:hover,
+.read-button:focus {
+  opacity: 0.6;
+}
+/* post list */
+/* Điều chỉnh số lượng cột dựa trên kích thước màn hình */
+
+.post-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-list {
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .post-box {
+    margin: 5px auto;
+  }
+}

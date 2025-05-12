@@ -1,0 +1,37 @@
+.donation-code {
+  width: 200px;
+}
+.donation-list {
+  font-size: 14px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.button {
+  border: none;
+  border-radius: 3px;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  background-color: rgba(144, 140, 140, 0.546);
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-responsive table {
+  width: 100%;
+  table-layout: auto;
+}
+.table-responsive td input[type="checkbox"] {
+  /* vertical-align: middle; */
+  margin: 0 auto;
+  display: block;
+}
+.table .correct-button:hover,
+.table .correct-button:focus {
+  cursor: pointer;
+  opacity: 0.9;
+}

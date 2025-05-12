@@ -1,0 +1,69 @@
+.main-image-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto; /* Adjust as needed */
+  max-height: 500px; /* Optional: set a maximum height */
+  object-fit: cover; /* Ensure the image fills the container */
+  border: 1px solid #ddd;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.thumbnail-list {
+  position: relative;
+  margin-top: 10px;
+  /* overflow-x: auto; Enable horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent thumbnails from wrapping */
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  max-width: 100px; /* Adjust as needed */
+  max-height: 80px; /* Adjust as needed */
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  border: 1px solid transparent 100%;
+  margin: 5px;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  opacity: 1;
+  border-color: #007bff; /* Highlight active thumbnail */
+}
+.thumbnail-carousel {
+  display: flex;
+  margin-left: 100px;
+  transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  gap: 10px; /* Add some gap between thumbnails */
+  overflow: hidden;
+}

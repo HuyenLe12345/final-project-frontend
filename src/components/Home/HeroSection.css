@@ -1,0 +1,83 @@
+/* Kích thước và vị trí */
+.hero-section {
+  height: 500px; /* Điều chỉnh chiều cao theo ý muốn */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Hình nền */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh phủ toàn bộ khu vực */
+  z-index: 1; /* Đặt hình ảnh ở phía sau nội dung */
+}
+
+/* Hiệu ứng mờ cho hình nền */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt */
+  z-index: 2; /* Đặt lớp phủ phía trên hình ảnh */
+}
+
+/* Nội dung */
+.hero-content {
+  position: relative;
+  z-index: 3; /* Đặt nội dung lên trên lớp phủ và hình ảnh */
+  padding: 20px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Chữ tiêu đề */
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Chữ mô tả */
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Các nút */
+.hero-buttons {
+  display: flex;
+}
+
+/* Điều hướng */
+.hero-navigation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+}
+
+/* Nút điều hướng */
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
