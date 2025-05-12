@@ -6,7 +6,7 @@ import queryString from "query-string";
 // Set up default config for http requests here
 // Please have a look at here `https://github.com/axios/axios#requestconfig` for the full list of configs
 const axiosClient = axios.create({
-  baseURL: "final-project-backend-production-c0dc.up.railway.app",
+  baseURL: "https://final-project-backend-production-c0dc.up.railway.app",
   headers: {
     "content-type": "application/json",
   },
@@ -55,7 +55,7 @@ axiosClient.interceptors.response.use(
           if (refreshToken) {
             try {
               const response = await axios.post(
-                "http://localhost:8080/users/auth/refresh-token",
+                "https://final-project-backend-production-c0dc.up.railway.app/users/auth/refresh-token",
                 {
                   token: refreshToken,
                 }
