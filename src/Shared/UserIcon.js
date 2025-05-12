@@ -4,7 +4,7 @@ const UserIcon = ({ username, avatar, href }) => {
   return (
     <div className={`avatar-nav ${!avatar ? "user-icon" : ""}`}>
       {avatar ? (
-        <img src={`http://localhost:8080/${avatar}`} />
+        <img src={`https://final-project-backend-production-c0dc.up.railway.app/${avatar}`} />
       ) : (
         <span>{firstLetter}</span>
       )}
