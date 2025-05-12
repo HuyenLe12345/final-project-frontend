@@ -43,7 +43,7 @@ const CarouselImage = ({ images }) => {
           {images.map((image, i) => (
             <img
               key={i} // Use i instead of Math.random() for better performance
-              src={`http://localhost:8080/${image}`}
+              src={`https://final-project-backend-production-c0dc.up.railway.app/${image}`}
               alt={image}
               className={`thumbnail ${image === images[index] ? "active" : ""}`}
               // style={{
