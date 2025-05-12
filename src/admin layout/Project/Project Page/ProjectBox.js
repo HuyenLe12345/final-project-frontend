@@ -30,7 +30,7 @@ const ProjectBox = ({ project }) => {
         to={`/projects/${project._id}`}
       >
         <img
-          src={`http://localhost:8080/${project.images[0]}`}
+          src={`https://final-project-backend-production-c0dc.up.railway.app/${project.images[0]}`}
           alt={project.title}
         />
       </Link>
@@ -111,7 +111,7 @@ const ProjectBox = ({ project }) => {
           >
             <div className="avatar">
               <img
-                src={`http://localhost:8080/${project.organizationId.avatar}`}
+                src={`https://final-project-backend-production-c0dc.up.railway.app/${project.organizationId.avatar}`}
                 alt=""
               />
             </div>
