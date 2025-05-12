@@ -89,7 +89,7 @@ const UserPage = () => {
       <div
         className="profile-header"
         style={{
-          backgroundImage: `url(http://localhost:8080/${userData.background})`,
+          backgroundImage: `url(https://final-project-backend-production-c0dc.up.railway.app/${userData.background})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -114,7 +114,7 @@ const UserPage = () => {
             }
           }}
         >
-          <img src={`http://localhost:8080/${userData.avatar}`} alt="Avatar" />
+          <img src={`https://final-project-backend-production-c0dc.up.railway.app/${userData.avatar}`} alt="Avatar" />
         </div>
       </div>
       {userData &&
