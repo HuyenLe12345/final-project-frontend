@@ -222,7 +222,7 @@ function PostDetail() {
                 <div className="row align-items-center each-post mx-1 ">
                   <div key={post._id} className="recent-post px-0 col-sm-3">
                     <Image
-                      src={`http://localhost:8080/${post.images[0]}`}
+                      src={`https://final-project-backend-production-c0dc.up.railway.app/${post.images[0]}`}
                       fluid
                     />
                   </div>
@@ -263,7 +263,7 @@ function PostDetail() {
             {post && (
               <>
                 <Image
-                  src={`http://localhost:8080/${post.images[currentImage]}`}
+                  src={`https://final-project-backend-production-c0dc.up.railway.app/${post.images[currentImage]}`}
                   fluid
                 />
                 <div className="modal-controls text-center mt-3">
