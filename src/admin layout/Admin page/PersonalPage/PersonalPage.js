@@ -215,7 +215,7 @@ const PersonalPage = () => {
       <div
         className="profile-header"
         style={{
-          backgroundImage: `url("http://localhost:8080/${getProfile?.background}")`,
+          backgroundImage: `url("https://final-project-backend-production-c0dc.up.railway.app/${getProfile?.background}")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -247,7 +247,7 @@ const PersonalPage = () => {
           }}
         >
           <img
-            src={`http://localhost:8080/${getProfile?.avatar}`}
+            src={`https://final-project-backend-production-c0dc.up.railway.app/${getProfile?.avatar}`}
             alt="Avatar"
             style={{ objectFit: "contain" }}
           />
